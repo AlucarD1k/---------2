@@ -127,8 +127,82 @@ main{
     width: 62.5%;
     margin-top: 70px;
 }
+article{
+	margin-bottom: 70px;
+}
+article>header{
+	font-size: 0px;
+	background: none;
+	margin-bottom: 10px;
+}
+article>h2{
+	font-size: 1.75em;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 1.1;
+	margin: 0 0 40px 20px;
+	color: #4f4e4e;
+}
+article>p{
+	margin: 0 0 20px 20px;
+	line-height: 1.3;
+}
+a.more{
+	border: 2px solid #c2c2c2;
+	color: #c2c2c2;
+	padding: 7px 20px;
+	display: inline-block;
+	border-radius: 20px;
+}
+a:hover.more{
+	color: #339933;
+	border-color: #339933;
+}
 aside{
     float: right;
     width: 28.3%;
     margin-top: 70px;
+}
+.widjet{
+	margin-bottom: 50px;
+}
+.widjet h2{
+	text-transform: uppercase;
+	color: #6c6969;
+	background: #f8f8f8;
+	border-left: 2px solid #58c93a;
+	padding: 10px 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.search{
+	color: #b9b9b9;
+	font-size: 0.75em;
+	width: 100%;
+	border: 1px solid #e1e0e0;
+	padding: 15px 20px;
+}
+.widjet>nav{
+	margin: 0 0 0 20px;
+}
+.subscribe{
+	height: 48px;
+	position: relative;
+	width: 100%;
+}
+.subscribe-input{
+	color: #b9b9b9;
+	font-size: 0.75em;
+	width: 100%;
+	border: 1px solid #e1e0e0;
+	padding: 15px 50px 15px 20px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.subcribe-img{
+	position: absolute;
+	right: 20px;
+	top: 12px;
 }
