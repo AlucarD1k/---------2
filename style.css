@@ -122,6 +122,10 @@ header{
     color: #58c93a;
     border-bottom: 3px solid #58c93a;
 }
+.content{
+	border-right: 1px solid #e1e0e0;
+	border-left: 1px solid #e1e0e0;
+}
 main{
     float: left;
     width: 62.5%;
@@ -134,6 +138,24 @@ article>header{
 	font-size: 0px;
 	background: none;
 	margin-bottom: 10px;
+	position: relative;
+}
+.publish{
+	font-size: 13px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	position: absolute;
+	bottom: -60px;
+	padding: 5px 15px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-transition: bottom 0.1s linear;
+	-moz-transition: bottom 0.1s linear;
+	-o-transition: bottom 0.1s linear;
+	transition: bottom 0.1s linear;
+}
+article>header:hover .publish{
+	bottom: 0;
 }
 article>h2{
 	font-size: 1.75em;
@@ -153,6 +175,11 @@ a.more{
 	padding: 7px 20px;
 	display: inline-block;
 	border-radius: 20px;
+	text-decoration: none;
+	-webkit-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
 }
 a:hover.more{
 	color: #339933;
@@ -180,6 +207,7 @@ aside{
 	font-size: 0.75em;
 	width: 100%;
 	border: 1px solid #e1e0e0;
+	border-right: none;
 	padding: 15px 20px;
 }
 .widjet>nav{
@@ -195,6 +223,7 @@ aside{
 	font-size: 0.75em;
 	width: 100%;
 	border: 1px solid #e1e0e0;
+	border-right: none;
 	padding: 15px 50px 15px 20px;
 	box-sizing: border-box;
 	position: absolute;
@@ -205,4 +234,71 @@ aside{
 	position: absolute;
 	right: 20px;
 	top: 12px;
+}
+.pager{
+	border-top: 1px solid #e1e0e0;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 30px;
+}
+.pager a{
+	color: #818181;
+	text-decoration: none;
+}
+.pager a:hover{
+	text-decoration: underline;
+}
+.previous-link{
+	float: left;
+}
+.next-link{
+	float: right;
+}
+footer{
+	background-color: #f8f8f8;
+	border-top: 1px solid #e1e0e0;
+	text-align: center;
+	font-size: 0.8125em;
+	padding: 50px;
+}
+footer img{
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+	.logo{
+		margin-top: 20px;
+	}
+	.menu li a{
+		padding: 25px 35px;
+	}
+	main{
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+	article>header img{
+		width: 100%;
+	}
+	aside{
+		float:none; 
+		width:100%; 
+		margin-top:70px;
+	}
+}
+	
+@media screen and (max-width:620px) {
+	.logo{
+		float: none;
+		margin: 10px auto;
+		display: block;
+	}
+	.menu{
+		float: none; 
+		width: 100%;
+	}
+	.menu li a{
+		padding: 10px 35px;
+	}
 }
